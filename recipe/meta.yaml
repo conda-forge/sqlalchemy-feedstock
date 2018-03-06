@@ -1,24 +1,21 @@
-{% set name = "SQLAlchemy" %}
-{% set version = "1.2.1" %}
-{% set sha256 = "9ede7070d6fd18f28058be88296ed67893e2637465516d6a596cd9afea97b154" %}
+{% set version = "1.2.4" %}
 
 package:
-  name: {{ name|lower }}
+  name: sqlalchemy
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/S/SQLAlchemy/SQLAlchemy-{{ version }}.tar.gz
+  sha256: 6997507af46b10630e13b605ac278b78885fd683d038896dbee0e7ec41d809d2
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
 

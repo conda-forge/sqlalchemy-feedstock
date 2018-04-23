@@ -16,14 +16,16 @@ gives application developers the full power and flexibility of SQL.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sqlalchemy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sqlalchemy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sqlalchemy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sqlalchemy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sqlalchemy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sqlalchemy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/sqlalchemy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/sqlalchemy-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/sqlalchemy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/sqlalchemy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/sqlalchemy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/sqlalchemy-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sqlalchemy/badges/version.svg)](https://anaconda.org/conda-forge/sqlalchemy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sqlalchemy/badges/downloads.svg)](https://anaconda.org/conda-forge/sqlalchemy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy-green.svg)](https://anaconda.org/conda-forge/sqlalchemy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy.svg)](https://anaconda.org/conda-forge/sqlalchemy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy.svg)](https://anaconda.org/conda-forge/sqlalchemy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy.svg)](https://anaconda.org/conda-forge/sqlalchemy) |
 
 Installing sqlalchemy
 =====================

@@ -14,8 +14,12 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+
+  host:
     - python
     - pip
+
   run:
     - python
 

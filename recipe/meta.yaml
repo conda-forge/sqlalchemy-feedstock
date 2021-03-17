@@ -9,7 +9,7 @@ source:
   sha256: 9cfef2ad30c5ee1d494d98f3c55a9ac29ec6d294b70849c541d139e4fe1a74e6
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -18,15 +18,17 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - python
     - pip
-  run:
     - python
+  run:
+    - greenlet !=0.4.17  # [py>=3]
     - importlib-metadata  # [py<38]
+    - python
 
 test:
   requires:
-    - mock  # [py27]
+    - pip
+    - mock
   imports:
     - sqlalchemy
     - sqlalchemy.connectors
@@ -48,6 +50,8 @@ test:
     - sqlalchemy.testing
     - sqlalchemy.testing.plugin
     - sqlalchemy.util
+  commands:
+    - pip check
 
 about:
   home: http://www.sqlalchemy.org/

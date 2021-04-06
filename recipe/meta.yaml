@@ -9,7 +9,7 @@ source:
   sha256: 1294f05916c044631fd626a4866326bbfbd17f62bd37510d000afaef4b35bd74
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -54,15 +54,15 @@ test:
     - pip check
 
 about:
-  home: http://www.sqlalchemy.org/
+  home: https://www.sqlalchemy.org/
   license: MIT
   license_file: LICENSE
   summary: Database Abstraction Library.
   description: |
     SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that
     gives application developers the full power and flexibility of SQL.
-  doc_url: http://docs.sqlalchemy.org/en/rel_1_0/
-  dev_url: https://bitbucket.org/zzzeek/sqlalchemy/
+  doc_url: https://docs.sqlalchemy.org/
+  dev_url: https://github.com/sqlalchemy/sqlalchemy
   doc_source_url: https://github.com/zzzeek/sqlalchemy/blob/master/doc/build/index.rst
 
 extra:

@@ -1,7 +1,7 @@
 About sqlalchemy
 ================
 
-Home: http://www.sqlalchemy.org/
+Home: https://www.sqlalchemy.org/
 
 Package license: MIT
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sqlalchemy-feed
 
 Summary: Database Abstraction Library.
 
-Development: https://bitbucket.org/zzzeek/sqlalchemy/
+Development: https://github.com/sqlalchemy/sqlalchemy
 
-Documentation: http://docs.sqlalchemy.org/en/rel_1_0/
+Documentation: https://docs.sqlalchemy.org/
 
 SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that
 gives application developers the full power and flexibility of SQL.

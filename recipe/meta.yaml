@@ -1,4 +1,4 @@
-{% set version = "1.4.16" %}
+{% set version = "1.4.17" %}
 
 package:
   name: sqlalchemy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/S/SQLAlchemy/SQLAlchemy-{{ version }}.tar.gz
-  sha256: ed53c2fb5d3981f3e718894b1978c3b33c4786c7f6a355300409ebbeb24bd497
+  sha256: 651cdb3adcee13624ba22d5ff3e96f91e16a115d2ca489ddc16a8e4c217e8509
 
 build:
   number: 0

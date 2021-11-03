@@ -23,11 +23,11 @@ requirements:
   run:
     - python
     - importlib-metadata  # [py<38]
-    - greenlet !=0.4.17  # [py3k]
+    - greenlet !=0.4.17  # [py>=30]
 
 test:
   requires:
-    - mock  # [py27]
+    - mock  # [py==27]
     - pip
   imports:
     - sqlalchemy

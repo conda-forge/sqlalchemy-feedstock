@@ -9,7 +9,7 @@ source:
   sha256: 6bc7f9d7d90ef55e8c6db1308a8619cd8f40e24a34f759119b95e7284dca351a
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -23,11 +23,11 @@ requirements:
   run:
     - python
     - importlib-metadata  # [py<38]
-    - greenlet !=0.4.17  # [py3k]
+    - greenlet !=0.4.17  # [py>=30]
 
 test:
   requires:
-    - mock  # [py27]
+    - mock  # [py==27]
     - pip
   imports:
     - sqlalchemy

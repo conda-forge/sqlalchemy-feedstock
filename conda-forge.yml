@@ -4,3 +4,6 @@ provider: {linux_aarch64: azure, linux_ppc64le: azure, win: azure}
 test_on_native_only: true
 bot:
   automerge: true
+github:
+  branch_name: main
+  tooling_branch_name: main

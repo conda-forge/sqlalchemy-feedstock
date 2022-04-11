@@ -24,8 +24,6 @@ requirements:
     - python
 
 test:
-  requires:
-    - mock  # [py27]
   imports:
     - sqlalchemy
     - sqlalchemy.connectors

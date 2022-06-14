@@ -1,16 +1,17 @@
+{% set name = "sqlalchemy" %}
 {% set version = "1.4.9" %}
 
 package:
-  name: sqlalchemy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/S/SQLAlchemy/SQLAlchemy-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-{{ version }}.tar.gz
   sha256: f31757972677fbe9132932a69a4f23db59187a072cc26427f56a3082b46b6dac
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -22,12 +23,11 @@ requirements:
     - pip
   run:
     - python
+    - greenlet !=0.4.17  # [py>=3]
     - importlib-metadata  # [py<38]
-    - greenlet !=0.4.17  # [py3k]
 
 test:
   requires:
-    - mock  # [py27]
     - pip
   imports:
     - sqlalchemy

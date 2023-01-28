@@ -22,12 +22,11 @@ requirements:
     - pip
   run:
     - python
-    - importlib-metadata  # [py<38]
-    - greenlet !=0.4.17  # [py>=30]
+    - greenlet !=0.4.17
+    - typing-extensions >= 4.2.0
 
 test:
   requires:
-    - mock  # [py==27]
     - pip
   imports:
     - sqlalchemy

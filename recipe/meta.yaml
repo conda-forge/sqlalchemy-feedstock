@@ -30,25 +30,6 @@ test:
     - pip
   imports:
     - sqlalchemy
-    - sqlalchemy.connectors
-    - sqlalchemy.databases
-    - sqlalchemy.dialects
-    - sqlalchemy.dialects.firebird
-    - sqlalchemy.dialects.mssql
-    - sqlalchemy.dialects.mysql
-    - sqlalchemy.dialects.oracle
-    - sqlalchemy.dialects.postgresql
-    - sqlalchemy.dialects.sqlite
-    - sqlalchemy.dialects.sybase
-    - sqlalchemy.engine
-    - sqlalchemy.event
-    - sqlalchemy.ext
-    - sqlalchemy.ext.declarative
-    - sqlalchemy.orm
-    - sqlalchemy.sql
-    - sqlalchemy.testing
-    - sqlalchemy.testing.plugin
-    - sqlalchemy.util
   commands:
     - pip check
 

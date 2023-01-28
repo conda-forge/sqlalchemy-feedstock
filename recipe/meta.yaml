@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - greenlet !=0.4.17
-    - typing-extensions >= 4.2.0
+    - typing-extensions >=4.2.0
 
 test:
   requires:

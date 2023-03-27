@@ -402,7 +402,6 @@ Feedstock Maintainers
 =====================
 
 * [@igortg](https://github.com/igortg/)
-* [@mcs07](https://github.com/mcs07/)
 * [@nehaljwani](https://github.com/nehaljwani/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@xylar](https://github.com/xylar/)

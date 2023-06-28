@@ -1,12 +1,13 @@
-{% set version = "1.4.46" %}
+{% set name = "sqlalchemy" %}
+{% set version = "1.4.48" %}
 
 package:
-  name: sqlalchemy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/S/SQLAlchemy/SQLAlchemy-{{ version }}.tar.gz
-  sha256: 6913b8247d8a292ef8315162a51931e2b40ce91681f1b6f18f697045200c4a30
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-{{ version }}.tar.gz
+  sha256: b47bc287096d989a0838ce96f7d8e966914a24da877ed41a7531d44b55cdb8df
 
 build:
   number: 0
@@ -23,35 +24,15 @@ requirements:
   run:
     - python
     - importlib-metadata  # [py<38]
-    - greenlet !=0.4.17  # [py>=30]
+    - greenlet !=0.4.17  # [py>=3]
 
 test:
-  requires:
-    - mock  # [py==27]
-    - pip
   imports:
     - sqlalchemy
-    - sqlalchemy.connectors
-    - sqlalchemy.databases
-    - sqlalchemy.dialects
-    - sqlalchemy.dialects.firebird
-    - sqlalchemy.dialects.mssql
-    - sqlalchemy.dialects.mysql
-    - sqlalchemy.dialects.oracle
-    - sqlalchemy.dialects.postgresql
-    - sqlalchemy.dialects.sqlite
-    - sqlalchemy.dialects.sybase
-    - sqlalchemy.engine
-    - sqlalchemy.event
-    - sqlalchemy.ext
-    - sqlalchemy.ext.declarative
-    - sqlalchemy.orm
-    - sqlalchemy.sql
-    - sqlalchemy.testing
-    - sqlalchemy.testing.plugin
-    - sqlalchemy.util
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://www.sqlalchemy.org/

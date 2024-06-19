@@ -27,7 +27,7 @@ requirements:
     - pip
   run:
     - python
-    - greenlet !=0.4.17
+    - greenlet !=0.4.17  # [py<313]
     - typing-extensions >=4.6.0
 
 test:

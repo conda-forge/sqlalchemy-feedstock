@@ -1,13 +1,13 @@
 {% set name = "sqlalchemy" %}
-{% set version = "2.0.32" %}
+{% set version = "2.0.33" %}
 
 package:
   name: sqlalchemy
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-{{ version }}.tar.gz
-  sha256: c1b88cc8b02b6a5f0efb0345a03672d4c897dc7d92585176f88c67346f565ea8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 91c93333c2b37ff721dc83b37e28c29de4c502b5612f2d093468037b86aa2be0
 
 build:
   number: 0
@@ -22,12 +22,12 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
-    - setuptools >=47
+    - setuptools >=61.0
     - cython >=0.29.24
     - pip
   run:
     - python
-    - greenlet !=0.4.17  # [py<313]
+    - greenlet !=0.4.17
     - typing-extensions >=4.6.0
 
 test:

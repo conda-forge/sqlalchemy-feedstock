@@ -22,12 +22,12 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
-    - setuptools >=47
+    - setuptools>=61.0
     - cython >=0.29.24
     - pip
   run:
     - python
-    - greenlet !=0.4.17  # [py<313]
+    - greenlet !=0.4.17
     - typing-extensions >=4.6.0
 
 test:

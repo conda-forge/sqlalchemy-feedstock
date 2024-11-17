@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy-{{ version }}.tar.gz
   sha256: 4470fbed088c35dc20b78a39aaf4ae54fe81790c783b3264872a0224f437c31a
 
 build:
@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - importlib-metadata  # [py<38]

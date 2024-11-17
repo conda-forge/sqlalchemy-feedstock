@@ -1,16 +1,16 @@
 {% set name = "sqlalchemy" %}
-{% set version = "1.4.49" %}
+{% set version = "1.4.54" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-{{ version }}.tar.gz
-  sha256: 06ff25cbae30c396c4b7737464f2a7fc37a67b7da409993b182b024cec80aed9
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-{{ version }}.tar.gz
+  sha256: 4470fbed088c35dc20b78a39aaf4ae54fe81790c783b3264872a0224f437c31a
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -18,6 +18,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip

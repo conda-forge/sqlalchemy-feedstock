@@ -71,27 +71,29 @@ outputs:
       commands:
         - pip check
 
-  - name: {{ name }}-with-mypy
-    build:
-      noarch: python
-      # noarch so just build it once
-      skip: true  # [not linux64 or py!=39]
-    requirements:
-      host:
-        - python {{ python_min }}
-      run:
-        - python >={{ python_min }}
-        - {{ pin_subpackage(name, max_pin='x.x.x.x.x.x') }}
-        - mypy >=1.7
-        - types-greenlet >=2
-    test:
-      requires:
-        - python {{ python_min }}
-        - pip
-      imports:
-        - sqlalchemy
-      commands:
-        - pip check
+  # types-greenlet not available on conda-forge
+  #
+  # - name: {{ name }}-with-mypy
+  #   build:
+  #     noarch: python
+  #     # noarch so just build it once
+  #     skip: true  # [not linux64 or py!=39]
+  #   requirements:
+  #     host:
+  #       - python {{ python_min }}
+  #     run:
+  #       - python >={{ python_min }}
+  #       - {{ pin_subpackage(name, max_pin='x.x.x.x.x.x') }}
+  #       - mypy >=1.7
+  #       - types-greenlet >=2
+  #   test:
+  #     requires:
+  #       - python {{ python_min }}
+  #       - pip
+  #     imports:
+  #       - sqlalchemy
+  #     commands:
+  #       - pip check
 
   - name: {{ name }}-with-mssql
     build:

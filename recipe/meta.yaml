@@ -460,27 +460,29 @@ outputs:
       commands:
         - pip check
 
-  - name: {{ name }}-with-aioodbc
-    build:
-      noarch: python
-      # noarch so just build it once
-      skip: true  # [not linux64 or py!=39]
-    requirements:
-      host:
-        - python {{ python_min }}
-      run:
-        - python >={{ python_min }}
-        - {{ pin_subpackage(name, max_pin='x.x.x.x.x.x') }}
-        - {{ name }}-with-asyncio
-        - aioodbc
-    test:
-      requires:
-        - python {{ python_min }}
-        - pip
-      imports:
-        - sqlalchemy
-      commands:
-        - pip check
+  # aioodbc not available on conda-forge
+  #
+  # - name: {{ name }}-with-aioodbc
+  #   build:
+  #     noarch: python
+  #     # noarch so just build it once
+  #     skip: true  # [not linux64 or py!=39]
+  #   requirements:
+  #     host:
+  #       - python {{ python_min }}
+  #     run:
+  #       - python >={{ python_min }}
+  #       - {{ pin_subpackage(name, max_pin='x.x.x.x.x.x') }}
+  #       - {{ name }}-with-asyncio
+  #       - aioodbc
+  #   test:
+  #     requires:
+  #       - python {{ python_min }}
+  #       - pip
+  #     imports:
+  #       - sqlalchemy
+  #     commands:
+  #       - pip check
 
   - name: {{ name }}-with-asyncmy
     build:

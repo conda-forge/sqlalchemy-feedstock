@@ -10,16 +10,9 @@ source:
   sha256: 5d2d1fe548def3267b4c70a8568f108d1fed7cbbeccb9cc166e05af2abc25c22
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython >=0.29.24                       # [build_platform != target_platform]
-    - {{ compiler('c') }}
-    - {{ stdlib("c") }}
   host:
     - python
     - setuptools >=61.0
@@ -27,16 +20,34 @@ requirements:
     - pip
   run:
     - python
-    - greenlet !=0.4.17
-    - typing-extensions >=4.6.0
 
-test:
-  requires:
-    - pip
-  imports:
-    - sqlalchemy
-  commands:
-    - pip check
+outputs:
+  - name: {{ name }}
+    script: install_sqlalchemy.sh
+    requirements:
+      build:
+        - python                                 # [build_platform != target_platform]
+        - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+        - cython >=0.29.24                       # [build_platform != target_platform]
+        - {{ compiler('c') }}
+        - {{ stdlib("c") }}
+      host:
+        - python
+        - setuptools >=61.0
+        - cython >=0.29.24
+        - pip
+      run:
+        - python
+        - greenlet !=0.4.17
+        - typing-extensions >=4.6.0
+
+    test:
+      requires:
+        - pip
+      imports:
+        - sqlalchemy
+      commands:
+        - pip check
 
 about:
   home: https://www.sqlalchemy.org/

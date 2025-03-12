@@ -1,5 +1,6 @@
 {% set name = "sqlalchemy" %}
 {% set version = "2.0.39" %}
+{% set python_min = "3.9" %}
 
 package:
   name: sqlalchemy
@@ -43,6 +44,27 @@ outputs:
 
     test:
       requires:
+        - pip
+      imports:
+        - sqlalchemy
+      commands:
+        - pip check
+
+  - name: {{ name }}-with-asyncio
+    build:
+      noarch: python
+      # noarch so just build it once
+      skip: true  # [not linux64 or py!=39]
+    requirements:
+      host:
+        - python {{ python_min }}
+      run:
+        - python >={{ python_min }}
+        - {{ pin_subpackage(name, max_pin='x.x.x.x.x.x') }}
+        - greenlet !=0.4.17
+    test:
+      requires:
+        - python {{ python_min }}
         - pip
       imports:
         - sqlalchemy

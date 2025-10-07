@@ -63,10 +63,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
+              <td>linux_64_python3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1959&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -98,10 +98,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_python3.9.____cpython</td>
+              <td>linux_aarch64_python3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1959&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -133,10 +133,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_python3.9.____cpython</td>
+              <td>linux_ppc64le_python3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1959&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -168,10 +168,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.9.____cpython</td>
+              <td>osx_64_python3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1959&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -203,10 +203,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_python3.9.____cpython</td>
+              <td>osx_arm64_python3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1959&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -238,10 +238,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_python3.9.____cpython</td>
+              <td>win_64_python3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1959&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/sqlalchemy-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr>
@@ -258,24 +258,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy-green.svg)](https://anaconda.org/conda-forge/sqlalchemy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy.svg)](https://anaconda.org/conda-forge/sqlalchemy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy.svg)](https://anaconda.org/conda-forge/sqlalchemy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy.svg)](https://anaconda.org/conda-forge/sqlalchemy) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--aiomysql-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiomysql) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-aiomysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiomysql) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-aiomysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiomysql) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-aiomysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiomysql) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--aiosqlite-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiosqlite) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-aiosqlite.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiosqlite) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-aiosqlite.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiosqlite) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-aiosqlite.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-aiosqlite) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--asyncio-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-asyncio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-asyncio.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-asyncio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-asyncio.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-asyncio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-asyncio.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-asyncio) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--mariadb--connector-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mariadb-connector) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-mariadb-connector.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mariadb-connector) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-mariadb-connector.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mariadb-connector) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-mariadb-connector.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mariadb-connector) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--mssql-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-mssql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-mssql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-mssql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--mssql--pymssql-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pymssql) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-mssql-pymssql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pymssql) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-mssql-pymssql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pymssql) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-mssql-pymssql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pymssql) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--mssql--pyodbc-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pyodbc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-mssql-pyodbc.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pyodbc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-mssql-pyodbc.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pyodbc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-mssql-pyodbc.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mssql-pyodbc) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--mysql-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-mysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-mysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-mysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--mysql--connector-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql-connector) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-mysql-connector.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql-connector) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-mysql-connector.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql-connector) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-mysql-connector.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-mysql-connector) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--oracle-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-oracle.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-oracle.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-oracle.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--oracle--oracledb-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle-oracledb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-oracle-oracledb.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle-oracledb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-oracle-oracledb.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle-oracledb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-oracle-oracledb.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-oracle-oracledb) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--postgresql-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-postgresql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-postgresql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-postgresql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--postgresql--asyncpg-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-asyncpg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-postgresql-asyncpg.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-asyncpg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-postgresql-asyncpg.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-asyncpg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-postgresql-asyncpg.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-asyncpg) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--postgresql--pg8000-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-pg8000) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-postgresql-pg8000.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-pg8000) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-postgresql-pg8000.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-pg8000) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-postgresql-pg8000.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-pg8000) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--postgresql--psycopg-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-postgresql-psycopg.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-postgresql-psycopg.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-postgresql-psycopg.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--postgresql--psycopg2binary-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg2binary) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-postgresql-psycopg2binary.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg2binary) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-postgresql-psycopg2binary.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg2binary) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-postgresql-psycopg2binary.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopg2binary) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--postgresql--psycopgbinary-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopgbinary) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-postgresql-psycopgbinary.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopgbinary) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-postgresql-psycopgbinary.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopgbinary) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-postgresql-psycopgbinary.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-postgresql-psycopgbinary) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sqlalchemy--with--pymysql-green.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-pymysql) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sqlalchemy-with-pymysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-pymysql) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sqlalchemy-with-pymysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-pymysql) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sqlalchemy-with-pymysql.svg)](https://anaconda.org/conda-forge/sqlalchemy-with-pymysql) |
 
 Installing sqlalchemy
 =====================
@@ -287,16 +269,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sqlalchemy, sqlalchemy-with-aiomysql, sqlalchemy-with-aiosqlite, sqlalchemy-with-asyncio, sqlalchemy-with-mariadb-connector, sqlalchemy-with-mssql, sqlalchemy-with-mssql-pymssql, sqlalchemy-with-mssql-pyodbc, sqlalchemy-with-mysql, sqlalchemy-with-mysql-connector, sqlalchemy-with-oracle, sqlalchemy-with-oracle-oracledb, sqlalchemy-with-postgresql, sqlalchemy-with-postgresql-asyncpg, sqlalchemy-with-postgresql-pg8000, sqlalchemy-with-postgresql-psycopg, sqlalchemy-with-postgresql-psycopg2binary, sqlalchemy-with-postgresql-psycopgbinary, sqlalchemy-with-pymysql` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `sqlalchemy` can be installed with `conda`:
 
 ```
-conda install sqlalchemy sqlalchemy-with-aiomysql sqlalchemy-with-aiosqlite sqlalchemy-with-asyncio sqlalchemy-with-mariadb-connector sqlalchemy-with-mssql sqlalchemy-with-mssql-pymssql sqlalchemy-with-mssql-pyodbc sqlalchemy-with-mysql sqlalchemy-with-mysql-connector sqlalchemy-with-oracle sqlalchemy-with-oracle-oracledb sqlalchemy-with-postgresql sqlalchemy-with-postgresql-asyncpg sqlalchemy-with-postgresql-pg8000 sqlalchemy-with-postgresql-psycopg sqlalchemy-with-postgresql-psycopg2binary sqlalchemy-with-postgresql-psycopgbinary sqlalchemy-with-pymysql
+conda install sqlalchemy
 ```
 
 or with `mamba`:
 
 ```
-mamba install sqlalchemy sqlalchemy-with-aiomysql sqlalchemy-with-aiosqlite sqlalchemy-with-asyncio sqlalchemy-with-mariadb-connector sqlalchemy-with-mssql sqlalchemy-with-mssql-pymssql sqlalchemy-with-mssql-pyodbc sqlalchemy-with-mysql sqlalchemy-with-mysql-connector sqlalchemy-with-oracle sqlalchemy-with-oracle-oracledb sqlalchemy-with-postgresql sqlalchemy-with-postgresql-asyncpg sqlalchemy-with-postgresql-pg8000 sqlalchemy-with-postgresql-psycopg sqlalchemy-with-postgresql-psycopg2binary sqlalchemy-with-postgresql-psycopgbinary sqlalchemy-with-pymysql
+mamba install sqlalchemy
 ```
 
 It is possible to list all of the versions of `sqlalchemy` available on your platform with `conda`:
@@ -346,12 +328,12 @@ it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
-To manage the continuous integration and simplify feedstock maintenance
+To manage the continuous integration and simplify feedstock maintenance,
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -378,7 +360,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `conda-forge` channel.
 Note that all branches in the conda-forge/sqlalchemy-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:

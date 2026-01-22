@@ -20,7 +20,7 @@ outputs:
       name: ${{ name }}
     build:
       script:
-        file: install_sqlalchemy.sh
+        - ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
     requirements:
       build:
         - if: build_platform != target_platform

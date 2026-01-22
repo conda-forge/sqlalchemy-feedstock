@@ -49,7 +49,7 @@ outputs:
       name: ${{ name }}-with-asyncio
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -68,7 +68,7 @@ outputs:
       name: ${{ name }}-with-mssql
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -87,7 +87,7 @@ outputs:
       name: ${{ name }}-with-mssql-pymssql
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -106,7 +106,7 @@ outputs:
       name: ${{ name }}-with-mssql-pyodbc
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -125,7 +125,7 @@ outputs:
       name: ${{ name }}-with-mysql
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -144,7 +144,7 @@ outputs:
       name: ${{ name }}-with-mysql-connector
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -163,7 +163,7 @@ outputs:
       name: ${{ name }}-with-mariadb-connector
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -182,7 +182,7 @@ outputs:
       name: ${{ name }}-with-oracle
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -201,7 +201,7 @@ outputs:
       name: ${{ name }}-with-oracle-oracledb
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -220,7 +220,7 @@ outputs:
       name: ${{ name }}-with-postgresql
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -239,7 +239,7 @@ outputs:
       name: ${{ name }}-with-postgresql-pg8000
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -258,7 +258,7 @@ outputs:
       name: ${{ name }}-with-postgresql-asyncpg
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -278,7 +278,7 @@ outputs:
       name: ${{ name }}-with-postgresql-psycopg2binary
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -297,7 +297,7 @@ outputs:
       name: ${{ name }}-with-postgresql-psycopg
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -316,7 +316,7 @@ outputs:
       name: ${{ name }}-with-postgresql-psycopgbinary
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -337,7 +337,7 @@ outputs:
       name: ${{ name }}-with-pymysql
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -356,7 +356,7 @@ outputs:
       name: ${{ name }}-with-aiomysql
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:
@@ -376,7 +376,7 @@ outputs:
       name: ${{ name }}-with-aiosqlite
     build:
       # noarch so just build it once
-      skip: not linux64 or match(python, "!=3.10")
+      skip: not (linux and x86_64) or match(python, "!=3.10")
       noarch: python
     requirements:
       host:

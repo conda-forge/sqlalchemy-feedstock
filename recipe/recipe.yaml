@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: sqlalchemy
   version: 2.0.46
-  python_min: 3.9
 
 recipe:
   name: sqlalchemy

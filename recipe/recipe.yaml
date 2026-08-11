@@ -13,7 +13,7 @@ source:
   sha256: 804dccd8a4a6242c4e30ad961e540e18a588f6527202f2d6791b01845d59fdc9
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -62,7 +62,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-mssql
     build:
@@ -81,7 +83,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-mssql-pymssql
     build:
@@ -100,7 +104,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-mssql-pyodbc
     build:
@@ -119,7 +125,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-mysql
     build:
@@ -138,7 +146,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-mysql-connector
     build:
@@ -157,7 +167,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-mariadb-connector
     build:
@@ -176,7 +188,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-oracle
     build:
@@ -195,7 +209,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-oracle-oracledb
     build:
@@ -214,7 +230,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-postgresql
     build:
@@ -252,7 +270,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-postgresql-asyncpg
     build:
@@ -272,7 +292,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-postgresql-psycopg2binary
     build:
@@ -291,7 +313,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-postgresql-psycopg
     build:
@@ -310,7 +334,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-postgresql-psycopgbinary
     build:
@@ -331,7 +357,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-pymysql
     build:
@@ -350,7 +378,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-aiomysql
     build:
@@ -370,7 +400,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-aiosqlite
     build:
@@ -390,7 +422,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
 
 about:
   license: MIT

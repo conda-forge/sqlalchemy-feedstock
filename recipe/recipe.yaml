@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sqlalchemy
-  version: "2.0.52"
+  version: "2.0.54"
 
 recipe:
   name: sqlalchemy
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 5e2d46356ac2ccb7d268ab6c2319ac6a2b42f1b8d5fd8bd3d46855cd82abee97
+  sha256: baa8521e8ee9f24e75dfc7aaabc08020e551ef0d48d7c3e3536f5cddf277586b
 
 build:
   number: 0
@@ -32,13 +32,13 @@ outputs:
         - ${{ stdlib("c") }}
       host:
         - python
+        - pip
         - setuptools >=61.0
         - cython >=0.29.24
-        - pip
       run:
         - python
-        - greenlet !=0.4.17
-        - typing-extensions >=4.6.0
+        - greenlet >=1
+        - typing_extensions >=4.6.0
     tests:
       - python:
           imports:
@@ -56,7 +56,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - greenlet !=0.4.17
+        - greenlet >=1
     tests:
       - python:
           imports:
@@ -182,7 +182,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - mariadb >=1.0.1,!=1.1.2,!=1.1.5,!=1.1.10
+        - mariadb >=1.0.1,!=1.1.10,!=1.1.2,!=1.1.5
     tests:
       - python:
           imports:
@@ -251,7 +251,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-postgresql-pg8000
     build:
@@ -285,7 +287,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - ${{ name }}-with-asyncio
+        - greenlet >=1
         - asyncpg
     tests:
       - python:
@@ -349,9 +351,10 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
+        # psycopg[binary] needs nothing extra on conda-forge
+        - psycopg >=3.0.7,!=3.1.15
         # psycopg-binary doesn't exist (or make sense, since psycopg is also
         # binary) on conda-forge
-        - ${{ name }}-with-postgresql-psycopg
     tests:
       - python:
           imports:
@@ -393,8 +396,8 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - ${{ name }}-with-asyncio
-        - aiomysql
+        - greenlet >=1
+        - aiomysql >=0.2.0
     tests:
       - python:
           imports:
@@ -415,8 +418,9 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - ${{ name }}-with-asyncio
+        - greenlet >=1
         - aiosqlite
+        - typing_extensions !=3.10.0.1
     tests:
       - python:
           imports:

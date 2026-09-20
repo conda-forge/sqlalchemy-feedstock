@@ -289,7 +289,6 @@ outputs:
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - greenlet >=1
         - asyncpg
-        - ${{ name }}-with-asyncio
     tests:
       - python:
           imports:
@@ -356,7 +355,6 @@ outputs:
         - psycopg >=3.0.7,!=3.1.15
         # psycopg-binary doesn't exist (or make sense, since psycopg is also
         # binary) on conda-forge
-        - ${{ name }}-with-postgresql-psycopg
     tests:
       - python:
           imports:
@@ -400,7 +398,6 @@ outputs:
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - greenlet >=1
         - aiomysql >=0.2.0
-        - ${{ name }}-with-asyncio
     tests:
       - python:
           imports:
@@ -424,7 +421,6 @@ outputs:
         - greenlet >=1
         - aiosqlite
         - typing_extensions !=3.10.0.1
-        - ${{ name }}-with-asyncio
     tests:
       - python:
           imports:

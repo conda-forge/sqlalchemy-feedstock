@@ -32,13 +32,13 @@ outputs:
         - ${{ stdlib("c") }}
       host:
         - python
+        - pip
         - setuptools >=61.0
         - cython >=0.29.24
-        - pip
       run:
         - python
-        - greenlet !=0.4.17
-        - typing-extensions >=4.6.0
+        - greenlet >=1
+        - typing_extensions >=4.6.0
     tests:
       - python:
           imports:
@@ -56,7 +56,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - greenlet !=0.4.17
+        - greenlet >=1
     tests:
       - python:
           imports:
@@ -182,7 +182,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - mariadb >=1.0.1,!=1.1.2,!=1.1.5,!=1.1.10
+        - mariadb >=1.0.1,!=1.1.10,!=1.1.2,!=1.1.5
     tests:
       - python:
           imports:
@@ -251,7 +251,9 @@ outputs:
           imports:
             - sqlalchemy
           pip_check: true
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
   - package:
       name: ${{ name }}-with-postgresql-pg8000
     build:
@@ -285,8 +287,9 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - ${{ name }}-with-asyncio
+        - greenlet >=1
         - asyncpg
+        - ${{ name }}-with-asyncio
     tests:
       - python:
           imports:
@@ -349,6 +352,8 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
+        # psycopg[binary] needs nothing extra on conda-forge
+        - psycopg >=3.0.7,!=3.1.15
         # psycopg-binary doesn't exist (or make sense, since psycopg is also
         # binary) on conda-forge
         - ${{ name }}-with-postgresql-psycopg
@@ -393,8 +398,9 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
+        - greenlet >=1
+        - aiomysql >=0.2.0
         - ${{ name }}-with-asyncio
-        - aiomysql
     tests:
       - python:
           imports:
@@ -415,8 +421,10 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - ${{ name }}-with-asyncio
+        - greenlet >=1
         - aiosqlite
+        - typing_extensions !=3.10.0.1
+        - ${{ name }}-with-asyncio
     tests:
       - python:
           imports:

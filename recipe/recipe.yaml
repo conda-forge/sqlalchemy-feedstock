@@ -99,7 +99,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - pymssql
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -121,7 +120,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - pyodbc
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -164,7 +162,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - mysql-connector-python
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -186,7 +183,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - mariadb >=1.0.1,!=1.1.10,!=1.1.2,!=1.1.5
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -230,7 +226,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - oracledb >=2.0.1
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -273,7 +268,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - pg8000 >=1.29.3
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -294,7 +288,6 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - sqlalchemy
         - asyncpg
         - greenlet >=1
     tests:
@@ -318,7 +311,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - psycopg2-binary
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -340,7 +332,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - psycopg >=3.0.7,!=3.1.15
-        - sqlalchemy
     tests:
       - python:
           imports:
@@ -407,7 +398,6 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - sqlalchemy
         - aiomysql
         - greenlet >=1
     tests:
@@ -430,7 +420,6 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - sqlalchemy
         - aiosqlite
         - greenlet >=1
     tests:

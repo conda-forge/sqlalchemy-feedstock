@@ -38,7 +38,6 @@ outputs:
       run:
         - python
         - typing_extensions >=4.6.0
-        - greenlet >=1
     tests:
       - python:
           imports:
@@ -204,7 +203,6 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - oracledb >=2.0.1
-        - cx_oracle >=8
     tests:
       - python:
           imports:
@@ -288,8 +286,8 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - asyncpg
         - greenlet >=1
+        - asyncpg
     tests:
       - python:
           imports:
@@ -395,8 +393,8 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - aiomysql
         - greenlet >=1
+        - aiomysql
     tests:
       - python:
           imports:
@@ -417,8 +415,8 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - aiosqlite
         - greenlet >=1
+        - aiosqlite
     tests:
       - python:
           imports:

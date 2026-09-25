@@ -354,9 +354,6 @@ outputs:
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         # psycopg[binary] needs nothing extra on conda-forge
         - psycopg >=3.0.7,!=3.1.15
-        - sqlalchemy
-        # psycopg-binary doesn't exist (or make sense, since psycopg is also
-        # binary) on conda-forge
     tests:
       - python:
           imports:

@@ -13,7 +13,7 @@ source:
   sha256: 37600e4641c435a7e4549f4e6df79d9dfc096bb9712a10dba8925921bc87bc3c
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - package:
@@ -27,18 +27,18 @@ outputs:
           then:
             - python
             - cross-python_${{ target_platform }}
-            - cython >=0.29.24
+            - cython >=3.3
         - ${{ compiler('c') }}
         - ${{ stdlib("c") }}
       host:
         - python
         - pip
-        - setuptools >=61.0
-        - cython >=0.29.24
+        - setuptools >=77.0.3
+        - cython >=3.3
       run:
         - python
-        - greenlet >=1
         - typing_extensions >=4.6.0
+        - greenlet >=1
     tests:
       - python:
           imports:
@@ -99,6 +99,7 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - pymssql
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -120,6 +121,7 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - pyodbc
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -162,6 +164,7 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - mysql-connector-python
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -183,6 +186,7 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - mariadb >=1.0.1,!=1.1.10,!=1.1.2,!=1.1.5
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -203,6 +207,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
+        - oracledb >=2.0.1
         - cx_oracle >=8
     tests:
       - python:
@@ -224,7 +229,8 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - oracledb >=1.0.1
+        - oracledb >=2.0.1
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -245,7 +251,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - psycopg2 >=2.7
+        - psycopg >=3.0.7,!=3.1.15
     tests:
       - python:
           imports:
@@ -267,6 +273,7 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - pg8000 >=1.29.3
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -287,8 +294,9 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - greenlet >=1
+        - sqlalchemy
         - asyncpg
+        - greenlet >=1
     tests:
       - python:
           imports:
@@ -310,6 +318,7 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - psycopg2-binary
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -331,6 +340,7 @@ outputs:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         - psycopg >=3.0.7,!=3.1.15
+        - sqlalchemy
     tests:
       - python:
           imports:
@@ -353,6 +363,7 @@ outputs:
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
         # psycopg[binary] needs nothing extra on conda-forge
         - psycopg >=3.0.7,!=3.1.15
+        - sqlalchemy
         # psycopg-binary doesn't exist (or make sense, since psycopg is also
         # binary) on conda-forge
     tests:
@@ -396,8 +407,9 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
+        - sqlalchemy
+        - aiomysql
         - greenlet >=1
-        - aiomysql >=0.2.0
     tests:
       - python:
           imports:
@@ -418,9 +430,9 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - greenlet >=1
+        - sqlalchemy
         - aiosqlite
-        - typing_extensions !=3.10.0.1
+        - greenlet >=1
     tests:
       - python:
           imports:

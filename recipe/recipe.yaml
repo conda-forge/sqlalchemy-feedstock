@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sqlalchemy
-  version: "2.1.2"
+  version: "2.1.3"
 
 recipe:
   name: sqlalchemy
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 077ac635f7d92644888df8cf6dd92abde06c083dbf996fa58c22792d68b151db
+  sha256: ade5281df06038c6394f532590d592d3381ee5d11b9e0006a2570aef41145118
 
 build:
   number: 0

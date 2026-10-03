@@ -181,7 +181,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
-        - mariadb >=1.0.1,!=1.1.10,!=1.1.2,!=1.1.5
+        - mariadb >=1.0.1,!=1.1.2,!=1.1.5,!=1.1.10
     tests:
       - python:
           imports:
